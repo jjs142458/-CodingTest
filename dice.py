@@ -22,7 +22,7 @@ class Board:
         self.player = player
         self.computer = computer
 
-    def prtBoard(self):
+    def prtBoard(self):                 # 
         pPos = self.player.getPos()
         cPos = self.computer.getPos()
 
