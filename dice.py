@@ -1,28 +1,30 @@
 import random
 
+
 class Player:
-    def __init__(self, name, pos=0):    # 플레이어 이름 셋팅
+    def __init__(self, name, pos=0):  # 플레이어 이름 셋팅
         self.name = name
         self.pos = pos
 
-    def getName(self):                  # 플레이어 이름 가져오기
+    def getName(self):  # 플레이어 이름 가져오기
         return self.name
-        
-    def getPos(self):                   # 점수 가져오기
+
+    def getPos(self):  # 점수 가져오기
         return self.pos
 
-    def move(self):                     # 0~6까지 랜덤하게 이동
+    def move(self):  # 0~6까지 랜덤하게 이동
         self.pos += random.randrange(0, 6)
 
     def prtPlayer(self):
         print(self.name, " : ", self.pos)
+
 
 class Board:
     def __init__(self, player, computer):
         self.player = player
         self.computer = computer
 
-    def prtBoard(self):                 # 
+    def prtBoard(self):  # 보드판 생성 및 세팅
         pPos = self.player.getPos()
         cPos = self.computer.getPos()
 
@@ -33,6 +35,7 @@ class Board:
             else:
                 print("●", end="")
 
+        # point가 30이상이면 Goal! 대신 P를 출력 ex.●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●P
         if pPos >= 30:
             print("P")
         else:
@@ -50,8 +53,7 @@ class Board:
         else:
             print("Goal!")
 
-    def evaluate(self):
-
+    def evaluate(self):  # P, C의 점수가 30이상이면 false 아니면 true를 리턴
         if self.player.getPos() >= 30:
             self.prtBoard()
             print(self.player.getName() + "의 승리")
@@ -62,6 +64,7 @@ class Board:
             return False
 
         return True
+
 
 input("주사위 게임을 시작합니다. Enter키를 눌러 진행해주세요!")
 
