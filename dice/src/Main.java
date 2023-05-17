@@ -7,10 +7,12 @@ public class Main {
         Player player = new Player("정재성");
         Board board = new Board(player);
 
+
         while (board.evaluate()) {
             board.prtBoard();
             sc.nextLine();
             System.out.println("Enter!\n");
+            player.prtPlayer();
             board.moveBoard();
 
         }

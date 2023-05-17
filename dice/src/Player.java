@@ -16,8 +16,4 @@ public class Player {
     public void move() {
         pos += (int)((Math.random()*10000)%6);
     }
-
-    public void prtPlayer() {
-        System.out.println(name + " : " + pos);
-    }
 }
