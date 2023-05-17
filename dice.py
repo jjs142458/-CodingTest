@@ -77,7 +77,7 @@ while board.evaluate():
     board.prtBoard()
     input("Enter!!")
     player.move()
-    if not board.evaluate():
+    if not board.evaluate():  # evaluate가 false일때 정지
         break
     board.prtBoard()
     input("컴퓨터가 말을 움직입니다.")
