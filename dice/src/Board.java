@@ -1,7 +1,7 @@
 public class Board {
 
-    private Player player;
-    private Player computer;
+    private final Player player;
+    private final Player computer;
 
     public Board(Player player) {
         this.player =  player;
@@ -55,3 +55,4 @@ public class Board {
     }
 
 }
+
