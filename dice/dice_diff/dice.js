@@ -84,7 +84,7 @@ class Board {
   }
 }
 
-// Example usage:
+
 const player = new Player("정재성");
 const board = new Board(player);
 
