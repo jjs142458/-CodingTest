@@ -5,9 +5,9 @@ public class Main {
         Bracket bracket = new Bracket();
         Caesar caesar = new Caesar();
 
-        expressions.solution();
-        bracket.solution();
-        caesar.solution();
+        expressions.solution(); // 4
+        bracket.solution(); // true true false false
+        caesar.solution(); // BC b C a
 
     }
 }
