@@ -16,8 +16,8 @@ public class Caesar {
                 sb.append((char) ('A' + (transWordNum % 26)));
             }
             else if (Character.isLowerCase(word)) {
-                transWordNum = ((int) word + n)%97;
-                sb.append((char) (97 + (transWordNum % 26)));
+                transWordNum = ((int) word + n)%'a';
+                sb.append((char) ('a' + (transWordNum % 26)));
             }
             else {
                 sb.append(" ");
