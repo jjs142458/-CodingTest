@@ -8,12 +8,17 @@ public class Main {
         Caesar caesar = new Caesar(); // 시저 암호
         Ternary ternary = new Ternary(); // 3진법 뒤집기
         Secret secret = new Secret(); // 비밀지도
+        Recommendation recommendation = new Recommendation(); // 신규 아이디 추천
 
         expressions.solution(); // 4
         bracket.solution(); // true true false false
-        caesar.solution(); // BC b C a
-        ternary.solution(); // 7 229
+        caesar.solution(); // BC, b C a
+        ternary.solution(); // 7, 229
         secret.solution(); // [#####, # # #, ### #, #  ##, #####] [######, ###  #, ##  ##,  #### ,  #####, ### # ]
+        recommendation.solution(); // bat.y.abcdefghi, abcdefghijklmn.p
+
+
+
 
     }
 }
