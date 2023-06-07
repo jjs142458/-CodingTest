@@ -15,7 +15,7 @@ public class Main {
         caesar.solution(); // BC, b C a
         ternary.solution(); // 7, 229
         secret.solution(); // [#####, # # #, ### #, #  ##, #####] [######, ###  #, ##  ##,  #### ,  #####, ### # ]
-        recommendation.solution(); // bat.y.abcdefghi, abcdefghijklmn.p
+        recommendation.solution(); // bat.y.abcdefghi, abcdefghijklmn
 
 
 

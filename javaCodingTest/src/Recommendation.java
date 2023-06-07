@@ -33,6 +33,6 @@ public class Recommendation {
         System.out.println("신규 아이디 추천");
 
         System.out.println(recommendation("...!@BaT#*..y.abcdefghijklm"));
-        System.out.println("abcdefghijklmn.p");
+        System.out.println(recommendation("abcdefghijklmn.p"));
     }
 }
