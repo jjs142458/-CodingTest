@@ -9,6 +9,7 @@ public class Main {
         Ternary ternary = new Ternary(); // 3진법 뒤집기
         Secret secret = new Secret(); // 비밀지도
         Recommendation recommendation = new Recommendation(); // 신규 아이디 추천
+        Crane crane = new Crane(); // 크레인 인형 뽑기
 
         expressions.solution(); // 4
         bracket.solution(); // true true false false
@@ -16,6 +17,7 @@ public class Main {
         ternary.solution(); // 7, 229
         secret.solution(); // [#####, # # #, ### #, #  ##, #####] [######, ###  #, ##  ##,  #### ,  #####, ### # ]
         recommendation.solution(); // bat.y.abcdefghi, abcdefghijklmn
+        crane.solution(); // 4
 
 
 
