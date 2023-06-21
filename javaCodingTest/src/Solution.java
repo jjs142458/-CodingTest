@@ -7,6 +7,9 @@ public class Solution {
     Recommendation recommendation = new Recommendation(); // 신규 아이디 추천
     Crane crane = new Crane(); // 크레인 인형 뽑기
     Remove remove = new Remove(); // 짝지어 제거하기
+    CutArray cutArray = new CutArray(); // n^2 배열 자르기
+
+
     public void solution() {
         expressions.solution(); // 4
         bracket.solution(); // true true false false
@@ -16,6 +19,7 @@ public class Solution {
         recommendation.solution(); // bat.y.abcdefghi, abcdefghijklmn
         crane.solution(); // 4
         remove.solution(); // 1 0
+        cutArray.solution(); // [3, 2, 2, 3]
     }
 
 
