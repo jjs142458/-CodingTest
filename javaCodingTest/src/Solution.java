@@ -21,8 +21,4 @@ public class Solution {
         remove.solution(); // 1 0
         cutArray.solution(); // [3, 2, 2, 3]
     }
-
-
-
-
 }

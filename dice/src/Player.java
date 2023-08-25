@@ -2,7 +2,7 @@ public class Player {
     private final String name;
     private int pos = 0;
 
-    Player(String name) {
+    public Player(String name) {
         this.name = name;
     }
     public String getName() {
